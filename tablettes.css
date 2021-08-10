@@ -1,0 +1,59 @@
+/* Navigation */
+nav.en_tete {
+    margin: 0 20px;
+}
+
+nav.en_tete > img  {
+    height: 40px;
+}
+
+div.navigation {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px;
+    height: 80px;
+}
+
+div.navigation > a {
+    padding: 30px 5px;
+    margin: 0px 5px;
+    color: black;
+    text-decoration: none;
+}
+
+div.navigation > a:hover {
+    color: #0065FC;
+    border-top: 1px #0065FC solid;
+}
+
+/* Chapeau */
+section#chapeau{
+    margin-right: 40px;
+}
+#filtres {
+	width: 100%;
+}
+
+
+/* Hebergement */
+section#hebergement {
+    flex-direction: column-reverse;
+    margin-right: 40px;
+}
+section#container{
+    width: 100%;
+}
+section#container > span {
+   padding-bottom: 10px;
+   padding-top: 0;
+}
+section#container2{
+    width: 100%;
+    margin: 0;
+}
+div.hotel-star-pop {
+    padding-top: 0;
+}
+
