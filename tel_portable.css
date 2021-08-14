@@ -130,10 +130,6 @@ h3#h1act{
     margin-top:  30px;
 }
 
-div.Activ >a{
-    height:200px;
-}
-
 div.Activ >a >img{
     object-fit: cover;
     height: 140px;
@@ -145,7 +141,6 @@ div.Activ{
     grid-gap: 20px;
     height: auto;
     padding-right: 20px;
-    width:100%;
 }
 
 a#îles_du_frioul {
