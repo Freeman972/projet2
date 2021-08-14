@@ -292,9 +292,8 @@ div.Activ >a{
     color:black;
 }
 
-img#img_activites{
+div.Activ >a >img{
     border-radius: 20px 20px 0 0;
-    
 }
 
 div.activ_text_cont>h3{
@@ -330,7 +329,7 @@ a#vieux_port{
 } 
 img.vieux_port{
     object-fit: cover;
-    height: 390px;/*environ 88%*/
+    height: 390px;
 }
 
 img.Fort_de_Pomègues{
@@ -344,8 +343,7 @@ a#îles_du_frioul{
 }
 img.îles_du_frioul{
     object-fit: cover;
-    height: 125px;
-   
+    height: 125px;  
 }
 
 a#parc_National_des_Calanques{

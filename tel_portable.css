@@ -7,7 +7,6 @@ div.navigation {
     border-bottom: 1px;
     height: auto;
     width:100%;
-    justify-content: space-evenly;
 }
 
 div.navigation > a:hover {
@@ -135,9 +134,10 @@ div.Activ >a{
     height:200px;
 }
 
-img#img_activites{
+div.Activ >a >img{
     object-fit: cover;
     height: 140px;
+    border-radius: 20px 20px 0 0;
 }
 
 div.Activ{
