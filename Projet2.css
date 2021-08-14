@@ -1,54 +1,56 @@
 /* Main styles */
 * {
 	padding: 0;
-	margin: 0;
+    margin:0;
     font-family: 'Raleway', sans-serif;
-}
-body {
-    width: calc(100% - 80px);
-    margin-left: 40px;
 }
 
 /* Navigation */
 nav.en_tete {
     display:flex;
     flex-direction: row;
-    height: 80px;
     justify-content: space-between;
     align-items: center;
+    margin-left: 40px;
 }
 
-nav.en_tete > img  {
+div#LogoReservia > img  {
     height: 40px;
 }
+
 
 div.navigation {
     display:flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    border-top: 1px;
-    height: 80px;
 }
 
 div.navigation > a {
-    padding: 30px 5px;
-    margin: 0px 5px;
+    padding: 35px 15px;
+    margin: 0px 15px;
     color: black;
     text-decoration: none;
 }
 
 div.navigation > a:hover {
     color: #0065FC;
-    border-top: 1px #0065FC solid;
+    border-top: 2px #0065FC solid;
+}
+#insc{
+    color: #0065fc;
+    font-weight:bold;
 }
 
-
 /* Chapeau */
+section#chapeau{
+    margin-left: 40px;
+}
 
 section#chapeau > h2 {
     font-size: 20px;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
 section#chapeau > p {
@@ -57,15 +59,14 @@ section#chapeau > p {
 
 div#rechercher{
     display: flex;
-    height: 40px;
+    height: 50px;
     margin-top: 20px;
     margin-bottom: 30px;
 }
 div.local{
     align-content: center;
     border-radius: 10px 0px 0px 10px;
-    height: 30px;
-    padding: 10px 15px 0px 15px;
+    padding:15px;
     align-items: center;
     background-color: #f2f2f2;
 }
@@ -73,63 +74,78 @@ div#rechercher > input[type=text] {
     border: none;
     border-top: 1px #f2f2f2 solid;
     border-bottom: 1px #f2f2f2 solid;
-    padding-left: 10px;
+    padding: 0 10px;
+    font-weight: bold;
+    font-size: 16px;
 }
-button.rech {
+div.rech {
 	color: #ffffff;
 	background-color: #0065FC;
-	border-radius: 0px 10px 10px 0px;
+	border-radius: 0px 15px 15px 0px;
     border: none;
-    padding: 0px 12px;
+    padding: 15px 20px;
+    font-size: 16px;
     font-weight: bold;
+}
+#search { 
+    text-decoration: none;
+    color: #fff;
+}
+#search-icon{
+    display: none;
 }
 
 #filtres {
-	width: 65%;
-	margin: 4px 4px;
-	padding: 4px 4px;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
     align-items: center;
-    list-style-type: none;
 }
+#filtres>li{
+    padding:5px 30px 5px 0;
+}
+
 div.filtre_container:hover {   
     color:orangered;
 }
 div.filtre_container {
     border-radius: 25px;
-    border: 2px #f2f2f2 solid;
+    border: 2px #d9d9d9 solid;
+    border-left: none;
 }
 i.filtre_icon {
     border-radius: 50%;
     background-color: #deebff;
     color: #0065fc;
-    padding: 14px;
+    padding: 12px;
+    font-size: 18px;
 }
 span.filtre_label {
-    margin-left: 8px;
-    margin-right: 16px;
+    padding-left: 8px;
+    padding-right: 16px;
     font-weight: bold;
 }
 
-p.info{
+div.info{
     font-size : 14px;
     margin : 20px 0;
-    padding-left: 10px;
+    display:inline-flex;
+    align-items: center;
 }
 
 i.info_icon {
     color: blue;
-    border: 1px solid black;
+    border: 2px solid #f2f2f2;
     border-radius: 50%;
-    padding: 3px 8px;
+    padding: 5px 8px;
+    margin-right: 10px;
+    font-size: 10px;
 }
 
 /* Hebergement */
 section#hebergement {
     display: flex;
     flex-wrap: wrap;
+    margin-left: 40px;
 }
 
 div.heb_item {
@@ -138,7 +154,7 @@ div.heb_item {
     background-color: white;
 }
 img.img_heb {
-    border-radius: 20px 20px 0 0;
+    border-radius: 15px 15px 0 0;
     object-fit: cover;
     width: 100%;
     height: 115px;
@@ -159,25 +175,17 @@ i.heb_star_icon{
     color: #0065fc;
 }
 
-div.heberg > img {
-	width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    border: 4px solid white;
-}
-
 section#container{
     display:flex;
     flex-direction: column;
-    margin:10px 30px 10px 0;
+    margin:10px 0;
     background-color: #f2f2f2;
     border-radius: 25px;
-    box-shadow: #cccc 2px 2px 10px;
-    width: 60%;
+    width: 62%;
 }
 
 #h1heberg{
-    margin:0px 30px 0px 30px;
+    margin:0px 30px;
     padding: 30px 10px 10px 10px;
     font-weight: bold;
 }
@@ -186,9 +194,9 @@ div.heberg{
 	display: grid;
     margin: 10px 30px 30px 30px;
     padding: 5px;
-    grid-template-rows:repeat(2 , 1fr);
     grid-template-columns: repeat(3, calc(33% - 30px));
     grid-gap: 30px;    
+
 }
 div.heberg>a{
     text-decoration: none;
@@ -204,10 +212,9 @@ section#container > span{
 section#container2{
     display:flex;
     flex-direction: column;
-    margin:10px 30px;
+    margin:10px 0 10px 30px;
     background-color: #f2f2f2;
     border-radius: 25px;
-    box-shadow: #cccc 2px 2px 10px;
     width: 30%;
 }
 div#chapeau_pop{
@@ -220,20 +227,26 @@ div#chapeau_pop{
     font-weight: bold;
 }
 
-div.Les_plus_pop > img {
+div.les_plus_pop>a{
+    text-decoration: none;
+    color:black;
+}
+
+div.les_plus_pop > img {
 	width: 100%;
     height: 100%;
     border-radius: 20px;
     border: 5px solid white;
 }
 
-div.Les_plus_pop{
+div.les_plus_pop{
     display:grid;
     margin: 20px 30px 30px 30px;
     padding: 5px;
     grid-gap: 30px;
-    
-
+}
+div.les_plus_pop_text_cont>p{
+    padding-top:10px
 }
 
 div.pop_item{
@@ -245,29 +258,23 @@ div.pop_item{
 }
 
 img.img_pop{
-    border-radius: 20px 0 0 20px;
+    border-radius: 15px 0 0 15px;
     object-fit: cover;
     width: 40%;
-    height: 135px;
 }
 
-div.les_plus_pop_text_cont{
+div.les_plus_pop_info_cont{  
     display:flex;
     flex-direction: column;
+    justify-content: space-between;
     padding: 10px 0 10px 20px;
     width: 60%;
-    height:135px
 }
 
-div.hotel-star-pop{
-    padding-top: 30px;
-
-}
 
 /*Activités*/
-section#Activites{
-    display:flex;
-    flex-direction: column;
+section#activites{
+    margin-left: 40px;
 }
 h3#h1act{
     margin-top: 40px;
@@ -278,7 +285,12 @@ div.Activ >img{
     width: 100%;
     height: 100%;
     border-radius: 20px;
-}   
+}
+
+div.Activ >a{
+    text-decoration: none;
+    color:black;
+}
 
 img#img_activites{
     border-radius: 20px 20px 0 0;
@@ -291,14 +303,14 @@ div.activ_text_cont>h3{
 
 div.Activ{
     display: grid;
-    grid-template-columns: repeat(4, calc(25% - 47px));
-    grid-template-rows: repeat(2, calc(50% - 30px));
+    grid-template-columns: repeat(4, calc(25% - 45px));
+    grid-template-rows: repeat(2,50%);
     grid-column-gap: 40px;
-    height: 500px;
-    
+    height: 450px;
+    margin-bottom: 60px;
 }
 
-div.Activ_item{
+.Activ_item{
     display: flex;
     box-shadow: #cccc 2px 2px 10px;
     border-radius: 20px;
@@ -307,61 +319,61 @@ div.Activ_item{
 }
 div.activ_text_cont{
     padding:20px;
+    padding-right: 0;
 }
 
 
-div#vieux_port{
+a#vieux_port{
     grid-row: 1/3;
     grid-column: 1/2;
    
 } 
 img.vieux_port{
     object-fit: cover;
-    height: 88%;
+    height: 390px;/*environ 88%*/
 }
 
 img.Fort_de_Pomègues{
     object-fit: cover;
-    height: 75%;
+    height: 165px;
 }
-div#îles_du_frioul{
+a#îles_du_frioul{
     grid-row: 2/3;
     grid-column: 2/3;
     margin-top:40px;
 }
 img.îles_du_frioul{
     object-fit: cover;
-    height: 70%;
+    height: 125px;
    
 }
 
-div#parc_National_des_Calanques{
+a#parc_National_des_Calanques{
     grid-row: 1/3;
     grid-column: 3/4;
     
 }
 img.parc_National_des_Calanques{
     object-fit: cover;
-    height: 88%;
+    height: 390px;
 }
 
 img.Notre-dame-de-la-Garde{
     object-fit: cover;
-    height: 70%;
+    height: 125px;
 }
-#Notre-dame-de-la-Garde{
+a#Notre-dame-de-la-Garde{
     margin-bottom:40px;
 }
 img.Parc_longchamp{
     object-fit: cover;
-    height: 75%;
+    height: 165px;
 }
 
 /*footer*/
 footer{
     background-color: #f2f2f2;
     padding: 50px;
-    margin-bottom: 50px;
     
 }
 ul{
@@ -379,5 +391,5 @@ div.bas_de_page>h3{
 div.bas_de_page{
     display: inline-block;
     vertical-align: top;
-    width: 30%;
+    width: 32%;
 }

@@ -1,0 +1,60 @@
+/* Navigation */
+nav.en_tete {
+    margin-right: 20px;
+}
+
+/* Chapeau */
+section#chapeau{
+    margin-right: 40px;
+}
+#filtres {
+	width: 100%;
+}
+
+ul#filtres > li:nth-child(1) {
+    width: 100%;
+}
+
+/* Hebergement */
+section#hebergement {
+    flex-direction: column-reverse;
+    margin-right: 40px;
+}
+section#container{
+    width: 100%;
+}
+section#container > span {
+   padding-bottom: 10px;
+   padding-top: 0;
+}
+section#container2{
+    width: 100%;
+    margin: 0;
+}
+
+div.hotel-star-pop {
+    padding-top: 0;
+}
+
+ /*Activites*/
+div.Activ{
+    display:flex;
+    flex-wrap:wrap;
+    grid-gap: 20px;
+    height: auto;
+    padding-right: 30px;
+}
+
+img#img_activites{
+    object-fit: cover;
+    height: 140px;
+}
+a#îles_du_frioul {
+    margin-top: 0;
+}
+a#Notre-dame-de-la-Garde {
+    margin-bottom: 0;
+}
+.Activ_item{
+    width:47%;
+}
