@@ -137,7 +137,6 @@ div.Activ >a{
 div.Activ >a >img{
     object-fit: cover;
     height: 140px;
-    border-radius: 20px 20px 0 0;
 }
 
 div.Activ{
@@ -146,6 +145,7 @@ div.Activ{
     grid-gap: 20px;
     height: auto;
     padding-right: 20px;
+    width:100%;
 }
 
 a#îles_du_frioul {
