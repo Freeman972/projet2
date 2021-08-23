@@ -105,8 +105,7 @@ div.les_plus_pop{
 
 /*Activités*/
 section#activites {
-    margin-left: 20px;
-    margin-right: 0;
+    margin: 0 20px;
 }
 
 h3#h1act{
@@ -123,7 +122,6 @@ div.Activ{
     flex-direction: column;
     grid-gap: 20px;
     height: auto;
-    padding-right: 20px;
 }
 
 a#îles_du_frioul {
