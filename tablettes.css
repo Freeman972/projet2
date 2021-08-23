@@ -42,7 +42,6 @@ div.Activ{
     flex-wrap:wrap;
     grid-gap: 20px;
     height: auto;
-    padding-right: 30px;
 }
 
 div.Activ>a>img{
@@ -56,5 +55,5 @@ a#Notre-dame-de-la-Garde {
     margin-bottom: 0;
 }
 .Activ_item{
-    width:47%;
+    width:calc(50% - 10px);
 }
