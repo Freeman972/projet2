@@ -20,6 +20,10 @@ div.navigation > a {
     border-bottom: 2px solid #f2f2f2;
 }
 
+div.navigation > a:hover {
+    border-bottom: 2px #0065FC solid;
+}
+
 #nav1, #nav2{
     border-top:0;
 }
