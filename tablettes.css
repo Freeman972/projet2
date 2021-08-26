@@ -24,8 +24,11 @@ section#container{
     width: 100%;
 }
 section#container > span {
-   padding-bottom: 10px;
+   padding-bottom: 20px;
    padding-top: 0;
+}
+div.heberg{
+    margin-right: 20px;
 }
 section#container2{
     width: 100%;

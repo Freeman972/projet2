@@ -218,7 +218,7 @@ section#container2{
 div#chapeau_pop{
     display: flex;
     justify-content: space-between;
-    margin:30px 40px 0 40px;
+    margin:40px 30px 0 30px;
 }
 
 #h2heberg{
@@ -240,7 +240,6 @@ div.les_plus_pop > img {
 div.les_plus_pop{
     display:grid;
     margin: 20px 30px 30px 30px;
-    padding: 5px;
     grid-gap: 30px;
 }
 div.les_plus_pop_text_cont>p{
