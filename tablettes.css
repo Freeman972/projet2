@@ -20,17 +20,17 @@ section#hebergement {
     flex-direction: column-reverse;
     margin-right: 40px;
 }
-section#container{
+div#container{
     width: 100%;
 }
-section#container > span {
+div#container > span {
    padding-bottom: 20px;
    padding-top: 0;
 }
 div.heberg{
     margin-right: 20px;
 }
-section#container2{
+div#container2{
     width: 100%;
     margin: 0;
 }

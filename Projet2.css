@@ -92,7 +92,9 @@ div.rech {
 #search-icon{
     display: none;
 }
-
+ul#filtres > li:nth-child(1) {
+font-weight: bold;
+}
 #filtres {
 	display: flex;
 	flex-wrap: wrap;
@@ -110,6 +112,13 @@ div.filtre_container {
     border-radius: 25px;
     border: 2px #d9d9d9 solid;
     border-left: none;
+}
+li.eco>div.filtre_container>i{
+    padding: 13px 12px;
+    font-size: 16px;
+}
+li.family>div.filtre_container>i{
+    padding: 12px 14px;
 }
 i.filtre_icon {
     border-radius: 50%;
@@ -173,8 +182,10 @@ i.heb_star_icon{
     background-color: white;
     color: #0065fc;
 }
-
-section#container{
+i.heb_star_icon_grey{
+    color:#d9d9d9;
+}
+div#container{
     display:flex;
     flex-direction: column;
     margin:10px 0;
@@ -201,13 +212,13 @@ div.heberg>a{
     color:black;
 }
 
-section#container > span{
+div#container > span{
     font-weight: bold;
     padding-left: 40px;
     padding-top: 10px;
 }
 
-section#container2{
+div#container2{
     display:flex;
     flex-direction: column;
     margin:10px 0 10px 30px;
